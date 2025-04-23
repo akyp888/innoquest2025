@@ -43,6 +43,7 @@ body, html {
 }
 
 .chat-main {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -228,10 +229,9 @@ body, html {
   width: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* ✅ Center vertically */
+  justify-content: right; /* ✅ Center vertically */
   align-items: center;
   overflow-y: auto;
-  height: 100vh; /* ✅ Full height */
   position: relative;
 }
 
@@ -242,7 +242,6 @@ body, html {
   gap: 2rem;
   position: relative;
   padding-left: 1.5rem;
-  width: 100%;
 }
 
 
@@ -313,4 +312,32 @@ body, html {
   font-weight: 500;
   font-size: 1rem;
   color: inherit;
+}
+
+.sidebar-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.markdown-preview h3, .markdown-preview h4 {
+  color: #90cdf4;
+  margin-top: 1rem;
+}
+
+.markdown-preview ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.markdown-preview li {
+  margin-bottom: 0.3rem;
+  color: #e2e8f0;
+}
+
+.markdown-preview p {
+  color: #cbd5e0;
+  line-height: 1.6;
 }
